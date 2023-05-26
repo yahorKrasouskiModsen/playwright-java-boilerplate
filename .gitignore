@@ -1,0 +1,12 @@
+# Compiled source #
+
+*.class
+*.log
+
+# Maven #
+
+/target/
+
+# IntelliJ #
+
+/.idea/
