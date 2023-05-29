@@ -30,14 +30,18 @@ jobs:
     - name: Copy History
       uses: actions/checkout@v2
       if: always()
+      continue-on-error: true
       with:
         ref: gh-pages
         path: gh-pages
     - name: Build Report
-      uses: simple-elf/allure-report-action@master
+      uses: simple-elf/allure-report-action@main
       if: always()
+      id: allure-report
       with:
-        allure_results: build/allure-results
+        allure_results: target/allure-results
+        gh_pages: gh-pages
+        allure_report: allure-report
         allure_history: allure-history
         keep_reports: 20
     - name: Publish Report
