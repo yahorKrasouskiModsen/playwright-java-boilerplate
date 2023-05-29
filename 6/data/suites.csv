@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon May 29 09:37:10 GMT 2023","Mon May 29 09:37:10 GMT 2023","86","Surefire suite","Surefire test","tests.Ui.ModsenTest","tests.Ui.ModsenTest","checkHomePageTitle","checkHomePageTitle",""
+"passed","Mon May 29 09:37:11 GMT 2023","Mon May 29 09:37:13 GMT 2023","1872","Surefire suite","Surefire test","tests.Ui.ModsenTest","tests.Ui.ModsenTest","clickGetStartedButton","clickGetStartedButton",""
+"passed","Mon May 29 09:37:13 GMT 2023","Mon May 29 09:37:13 GMT 2023","231","Surefire suite","Surefire test","tests.API.ExampleApiTest","tests.API.ExampleApiTest","modsenAuth","modsenAuth",""
