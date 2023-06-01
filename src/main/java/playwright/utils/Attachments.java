@@ -13,6 +13,6 @@ public class Attachments {
     @Attachment(value = "{0}", type = "image/png")
     public static byte[] captureScreenshotFullPage(String screenshotName) {
         return browserActions.getPage().screenshot(new Page.ScreenshotOptions()
-                .setType(ScreenshotType.PNG).setFullPage(true));
+                .setType(ScreenshotType.PNG).setFullPage(PropertiesConstants.FULL_PAGE_SCREENSHOT_OPTION));
     }
 }
