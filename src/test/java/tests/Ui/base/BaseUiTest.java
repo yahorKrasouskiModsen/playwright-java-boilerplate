@@ -2,17 +2,16 @@ package tests.Ui.base;
 
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Page;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 import playwright.Ui.browser.BrowserActions;
 import playwright.Ui.pages.ModsenHomePage;
 import playwright.Ui.pages.base.BasePage;
 import playwright.Ui.pages.base.BasePageFactory;
+import playwright.utils.listeners.AttachmentListener;
 
 import static playwright.utils.PropertiesConstants.UI_BASE_URL;
 
+@Listeners({AttachmentListener.class})
 public class BaseUiTest {
 
     BrowserActions browserActions = new BrowserActions();

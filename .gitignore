@@ -10,3 +10,7 @@
 # IntelliJ #
 
 /.idea/
+
+# Allure #
+
+/.allure/
