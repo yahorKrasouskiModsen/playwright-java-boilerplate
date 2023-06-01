@@ -37,7 +37,7 @@ public class BrowserActions implements Browser {
      */
     public Browser createBrowser() {
         BrowserType browserType = createBrowserType();
-        if (Boolean.parseBoolean(PropertiesConstants.HEADFUL_OPTION)) {
+        if (PropertiesConstants.HEAD_FULL_BROWSER_OPTION) {
             browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(false));
         } else {
             browser = browserType.launch(new BrowserType.LaunchOptions().setHeadless(true));
