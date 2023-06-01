@@ -12,7 +12,7 @@ public class ModsenTest extends BaseUiTest {
     public void checkHomePageTitle() {
         ModsenHomePage modsenHomePage = createInstance(ModsenHomePage.class);
         String title = modsenHomePage.getHomePageTitle();
-        Assert.assertEquals(title, "Modsen123 | Modern Software Engineering",
+        Assert.assertEquals(title, "Modsen | Modern Software Engineering",
                 "Title is not equal to expected");
     }
 
