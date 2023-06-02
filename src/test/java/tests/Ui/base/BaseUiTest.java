@@ -7,11 +7,9 @@ import playwright.Ui.browser.BrowserActions;
 import playwright.Ui.pages.ModsenHomePage;
 import playwright.Ui.pages.base.BasePage;
 import playwright.Ui.pages.base.BasePageFactory;
-import playwright.utils.listeners.AttachmentListener;
 
 import static playwright.utils.PropertiesConstants.UI_BASE_URL;
 
-@Listeners({AttachmentListener.class})
 public class BaseUiTest {
 
     BrowserActions browserActions = new BrowserActions();
